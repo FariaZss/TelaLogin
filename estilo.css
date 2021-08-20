@@ -1,0 +1,164 @@
+
+body{
+    margin: 0px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #931FCD ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 10px;
+    text-align: center;
+}
+h1{
+    display: block;
+    margin-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+}
+.login{
+    position: relative;
+    margin-top: 50px;
+}
+.login input{
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    height: 35px;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+    border-radius: 0;
+  }
+  
+  .login input:focus{
+    border-bottom: 2px solid #9D51C3;
+  }
+  
+  .login input::placeholder{
+    color:red;
+    opacity: 50%;
+  }
+  
+  .login label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+  }
+  
+  .login input:required:invalid + label{
+    color: #D094EE ;
+  }
+  .login input:focus:required:invalid{
+    border-bottom: 2px solid #D094EE ;
+  }
+  .login input:required:invalid + label:before{
+    content: '*';
+  }
+  .login input:focus + label,
+  .login input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #B575D5;
+  }
+.senha{
+    margin: 10px;
+}
+.senha input{
+    margin: 10px;
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    height: 35px;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+    border-radius: 0;
+  }
+  
+  .senha input:focus{
+    border-bottom: 2px solid #9D51C3 ;
+  }
+  
+  .senha input::placeholder{
+    opacity: inherit;
+  }
+  
+  .senha label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+  }
+  
+  .senha input:required:invalid + label{
+    color: #D094EE ;
+  }
+  .senha input:focus:required:invalid{
+    border-bottom: 2px solid #D094EE ;
+  }
+  .senha input:required:invalid + label:before{
+    content: '*';
+  }
+  .senha input:focus + label,
+  .senha input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #B575D5 ;
+}
+
+#botao{
+    width: 200px;
+    height: 50px;
+    margin: 25px;
+
+    background-color: #CFA4E5  ;
+    border-radius: 5px;
+    box-shadow: transparent;
+    border:none;
+    color: #fff
+}
+.help{
+    margin: 50px
+}
+
+.help a{
+    text-decoration: none;
+}
+.help p{
+    font-size: 1.05em;
+}
+textarea:focus, input:focus{
+    box-shadow: 0 0 0 0;
+    outline: none;
+}
+@media screen and (max-width: 320px){
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+}
